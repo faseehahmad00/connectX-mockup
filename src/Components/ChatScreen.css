@@ -5,7 +5,7 @@
     height: 100vh;
 }
 .header{
-    flex:0.5;
+    flex:0.8;
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -38,7 +38,7 @@
 }
 
 .body{
-    flex:9.3;
+    flex:9.2;
     color: black;
     display: flex;
     flex-direction: column;

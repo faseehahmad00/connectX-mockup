@@ -16,7 +16,7 @@
     background: #efefef;
     display: flex;
     flex-direction: row;
-    height: 55px;
+    height: 53px;
     cursor: pointer;
     user-select: none;
     max-width: 100%;
@@ -103,18 +103,19 @@
 }
 
 .rce-citem-body--top-title {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
     color: black;
 }
 
 .rce-citem-body--bottom-title {
     color: #555;
-    font-size: 15px;
+    font-size: 14px;
     color: black;
 }
 
 .rce-citem-body--top-time {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0,0,0,0.4)
 }
 
@@ -123,8 +124,8 @@
 }
 
 .rce-citem-body--bottom-status span {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     font-size: 12px;
     color: white;
     font-weight: bold;

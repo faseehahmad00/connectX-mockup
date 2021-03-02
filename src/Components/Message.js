@@ -1,5 +1,5 @@
 import './Message.css';
-import { BsCheckAll,BsCheck} from "react-icons/bs";
+import { BsCheckAll,BsCheck,BsClockHistory} from "react-icons/bs";
 import { VscLoading } from "react-icons/vsc";
 
 export default function Message({sender,userid,text,date,id,status}) {
@@ -21,7 +21,7 @@ export default function Message({sender,userid,text,date,id,status}) {
                     } 
                     {
                          status === 'sending' && sender === userid &&
-                        <VscLoading className="status" style={{fontSize:'8px',margin:'0px 0px 2px 2px'}}/>
+                        <BsClockHistory className="status" style={{fontSize:'8px',margin:'0px 0px 2px 2px'}}/>
                     }   
                 </div>
             </div>
