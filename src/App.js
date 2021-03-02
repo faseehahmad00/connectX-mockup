@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Chathome from "./Components/Chathome";
+import Contacts from "./Components/Contacts";
+import ChatScreen from "./Components/ChatScreen";
+import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
+import messages from './Data/Message';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                        <div className="Body">
+                            <Contacts />
+                            <div className='chat'>
+                                <Switch>
+                                    <Route exact path="/">
+                                        <Chathome />
+                                    </Route>
+                                    <Route exact path="/chat/:id">
+                                        <ChatScreen messages={messages} userid={'1'} />
+                                    </Route>
+                                </Switch>
+                            </div>
+                        </div>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

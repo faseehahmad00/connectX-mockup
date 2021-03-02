@@ -1,38 +1,138 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+.title{
+  color:black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  align-items: center;
+  font-family: "Segoe UI",Serif;
+  max-height: 50px;
+  background-color: #EFEFEF;
+}
+.title h1{
+  flex:9;
+  text-align: left;
+}
+.newUserButton{
+  flex:1;
+  outline: none;
+  border: none;
+  color: grey;
+  margin: 3px 2px 0px 0px;
+}
+.newUserButton :hover{
+  outline: none;
+  border: none;
+  color: #444;
+}
+.newUserIcon{
+  font-size: 25px;
+}
+.Body{
+  flex:9.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: black;
   color: white;
+  max-height: 100vh;
+  min-width: 600px;
+}
+.contacts{
+  flex:2.5;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEFEF;
+  overflow: auto;
+  min-width: 250px;
+  /* border-right: 1px solid #ddd; */
+}
+.contactsHeader{
+  flex:0.7;
+  color: black;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3px 0px 5px;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  height: 30px;
+  background-color: #DDD;
+  flex:9;
 }
 
-.App-link {
-  color: #61dafb;
+
+.contactsHeader input{
+  width: 80%;
+  height: 20px;
+  border:none;
+  background-color: #DDD;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactsHeader input:focus{
+  box-shadow: none;
+  outline: none;
+}
+.Contactsbody{
+  flex:9.3;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
+
+.chat{
+  flex:7.5;
+  background-color: white;
+  min-width: 340px;
+}
+
+.Chathome{
+  height:100%;
+  color: black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.Chathome h1,h2{
+  margin-bottom: 0;
+  font-family: "Segoe UI",Serif;
+}
+.Chathome img{
+  height: 500px;
+  width:500px;
+}
+
+
+/*CUSTOM SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AAA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
