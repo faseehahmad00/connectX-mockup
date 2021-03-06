@@ -43,6 +43,8 @@
   max-height: 100vh;
   min-width: 600px;
 }
+
+
 .contacts{
   flex:2.5;
   display: flex;
@@ -50,7 +52,11 @@
   background-color: #EFEFEF;
   overflow: auto;
   min-width: 250px;
-  /* border-right: 1px solid #ddd; */
+}
+@media only screen and (max-width : 650px){
+  .Body{
+    display:none;
+  }
 }
 .contactsHeader{
   flex:0.7;

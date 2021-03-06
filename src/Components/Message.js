@@ -1,12 +1,13 @@
 import './Message.css';
 import { BsCheckAll,BsCheck,BsClockHistory} from "react-icons/bs";
-import { VscLoading } from "react-icons/vsc";
 
 export default function Message({sender,userid,text,date,id,status}) {
     return (
         <button id="msg" className={sender === userid ? "messagecomponentright" : "messagecomponentleft"} key={id}>
+       { sender !== userid &&
         <img className="avatar"
             src={sender === userid ? "https://source.unsplash.com/random/500x102/" : "https://source.unsplash.com/random/200x202/"} alt="." />
+        }
         <div className="messagebody">
             <div className={sender === userid ? "messageright" : "messageleft"}>
                 <p className="messagename">{sender === userid ? 'you' : `${id}`}</p>

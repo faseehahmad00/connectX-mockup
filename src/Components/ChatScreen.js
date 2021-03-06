@@ -14,7 +14,6 @@ export default function ChatScreen({ messages, userid }) {
     let [text, settext] = useState('');
     let [disabled,setDisabled] = useState(true);
 
-console.log(name);
 
     function updateScroll() {
         let element = document.getElementById("bodyid");
@@ -82,7 +81,7 @@ console.log(name);
                 })
                 }
             </div>
-            <div className="form">
+            <form className="form">
                 <textarea
                     type="text"
                     required value={text} onChange={handleChange} placeholder='new message here' />
@@ -90,7 +89,7 @@ console.log(name);
                     <IoIosSend style={{ height: '22px', width: '22px' }}/>
                 </button>
                 }
-            </div>
+            </form>
         </div>
 
 

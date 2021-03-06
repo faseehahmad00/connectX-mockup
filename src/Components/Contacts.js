@@ -12,7 +12,6 @@ export default function Contacts() {
 
     useEffect(() => {
         let filteredContacts = [...ContactData];
-        console.log(filteredContacts);
         let newfilter = filteredContacts.filter(m => {
             return m.title.toLowerCase().replace(/\s/g, '').includes(keyword.toLowerCase().replace(/\s/g, ''));
         })
